@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>ClickSend</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license>OSL</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>ClickSend for Magento</summary>
+    <description>ClickSend for Magento</description>
+    <notes>ClickSend for Magento First Stable version</notes>
+    <authors><author><name>ClickSend</name><user>ClickSend</user><email>ClickSend@gmail.com</email></author></authors>
+    <date>2016-05-30</date>
+    <time>04:55:48</time>
+    <contents><target name="magelocal"><dir name="Clicksend"><dir name="Sms"><dir name="Helper"><file name="Data.php" hash="773942d7f772c3ab67831c2c48f08236"/></dir><dir name="Model"><file name="Observer.php" hash="c7c4460020c2cad8f3ba83ffcd891e64"/></dir><dir name="etc"><file name="config.xml" hash="5877e43e7bd88fcd94271ad6f0cc778c"/><file name="system.xml" hash="9380377b8bf9f88734e2edca3a942f9b"/></dir><dir name="sql"><dir name="clicksendsms_setup"><file name="mysql4-install-1.0.0.php" hash="d89c2614dc951f24170cb1f1e304440b"/></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Clicksend_Sms.xml" hash="ec743a5ae15ae7eb8cc766bd90ed26e0"/></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.0.0</min><max>7.0.0</max></php></required></dependencies>
+</package>

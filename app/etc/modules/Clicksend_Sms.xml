@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Clicksend_Sms>
+            <active>true</active>
+            <codePool>local</codePool>
+        </Clicksend_Sms>
+    </modules>
+</config>

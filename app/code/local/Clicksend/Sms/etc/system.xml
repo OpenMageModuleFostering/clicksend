@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<config>
+    <tabs>
+        <clicksendsms translate="label" module="clicksendsms">
+            <label>ClickSend</label>
+            <sort_order>200</sort_order>
+        </clicksendsms>
+    </tabs>
+	<sections>
+		<clicksendsms translate="label" module="clicksendsms">
+            <label>Configuration</label>
+            <tab>clicksendsms</tab>
+            <frontend_type>text</frontend_type>
+            <sort_order>40</sort_order>
+            <show_in_default>1</show_in_default>
+            <show_in_website>1</show_in_website>
+            <show_in_store>1</show_in_store>
+            <groups>
+				<settings translate="label">
+                    <label>Settings</label>
+                    <sort_order>1</sort_order>
+					<expanded>1</expanded>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+						<username translate="label">
+                            <label>ClickSend Username</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<validate>required-entry</validate>
+                        </username>
+                        <password translate="label">
+                            <label>ClickSend Password</label>
+                            <frontend_type>password</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<validate>required-entry</validate>
+                        </password>
+						<sender translate="label">
+                            <label>Sender Number/Name</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<validate>required-entry</validate>
+                        </sender>
+						<adminphone translate="label">
+                            <label>Admin Phone Number</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<validate>required-entry</validate>
+                        </adminphone>
+						<debug translate="label">
+                            <label>Debug</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>5</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </debug>
+                    </fields>
+                </settings>
+				<messages translate="label">
+                    <label>Messages</label>
+                    <sort_order>504</sort_order>
+					<expanded>2</expanded>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+						<sendsmsonneworder translate="label">
+                            <label>Send SMS to admin on 'New Order'</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>1</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </sendsmsonneworder>
+						<sendsmsonnewordermessage translate="label">
+                            <label>New Order Notification Message</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>2</sort_order>
+                            <show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<validate>required-entry</validate>
+							<depends><sendsmsonneworder>1</sendsmsonneworder></depends>
+							<tooltip><![CDATA[The following variables can be mixed with your message:<br/>{ORDER-NUMBER},{ORDER-TOTAL},{ORDER-STATUS},{CARRIER-NAME},{PAYMENT-NAME},{CUSTOMER-NAME}, and {CUSTOMER-EMAIL}]]></tooltip>
+                        </sendsmsonnewordermessage>
+                        <sendsmsonship translate="label">
+                            <label>Send SMS to customer on status change to 'SHIPPED'</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_yesno</source_model>
+                            <sort_order>3</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </sendsmsonship>
+						<sendsmsonshipmessage translate="label">
+                            <label>Status Change Notification Message</label>
+                            <frontend_type>textarea</frontend_type>
+                            <sort_order>4</sort_order>
+                            <show_in_default>1</show_in_default>
+							<show_in_website>1</show_in_website>
+							<show_in_store>1</show_in_store>
+							<validate>required-entry</validate>
+							<depends><sendsmsonship>1</sendsmsonship></depends>
+							<tooltip><![CDATA[The following variables can be mixed with your message:<br/>{ORDER-NUMBER},{ORDER-TOTAL},{ORDER-STATUS},{CARRIER-NAME},{PAYMENT-NAME},{CUSTOMER-NAME}, and {CUSTOMER-EMAIL}]]></tooltip>
+                        </sendsmsonshipmessage>
+                    </fields>
+                </messages>
+            </groups>
+        </clicksendsms>
+	</sections>
+</config>
