@@ -1,7 +1,7 @@
 {
-    "name": "OpenMageModuleFostering\/ClickSend",
+    "name": "openmage-module-fostering\/clicksend",
     "type": "magento-module",
-    "license": "OSL",
+    "license": "OSL-3.0",
     "homepage": "",
     "description": "ClickSend for Magento",
     "authors": [
