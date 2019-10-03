@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/ClickSend",
+    "name": "OpenMageModuleFostering\/ClickSend",
     "type": "magento-module",
     "license": "OSL",
     "homepage": "",
     "description": "ClickSend for Magento",
     "authors": [
-    {
-        "name": "ClickSend",
-        "email": "ClickSend@gmail.com"
-    }
-],
+        {
+            "name": "ClickSend",
+            "email": "ClickSend@gmail.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
